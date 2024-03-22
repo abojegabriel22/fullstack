@@ -1,0 +1,22 @@
+
+
+/* HEADER SECTION  */
+header{
+    height: 60px;
+    /* background-image: linear-gradient(270deg,#b447eb,#57aeff 95%); */
+    /* border: 5px solid hotpink; */
+    background-color: #3b2632;
+}
+
+.brand{
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-left: 1%;
+    text-transform: capitalize;
+}
+.socialLogo{
+    height: 50px;
+    float: right;
+}

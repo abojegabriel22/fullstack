@@ -1,0 +1,25 @@
+<!-- <p>{{currentDate | date:"MMM-dd-yyyy"}}</p>
+<p>{{price | currency:"GBP"}}</p>
+<p>{{myData | json}}</p> -->
+<div class="search">
+    <div class="logo">
+        <span>d!</span>
+    </div>
+    <div class="heading">
+        {{title}}
+    </div>
+    <div class="dropdown">
+        <select id="city" (change)="handleCity($event)">
+            <option value="default">---SELECT YOUR CITY---</option>
+            <option *ngFor = "let loc of cities" [value]="loc.state_id">
+                {{loc.state | MyCustomPipe:"Upper"}}
+            </option>
+        </select>
+        <select id="restSelect" [disabled] = "disabled">
+            <option>---SELECT YOUR RESTAURANTS---</option>
+            <option *ngFor="let rest of restautants">
+                {{rest.restaurant_name}} - {{rest.address}}
+            </option>
+        </select>
+    </div>
+</div>
